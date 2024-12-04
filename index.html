@@ -134,7 +134,10 @@
                     width   : "90%",
                     height  : 1000,
                     syncScrolling : "single",
-                    path    : "./mdeditor/lib/"
+                    path    : "./mdeditor/lib/",
+                 onload:() => {
+                    testEditor.previewing();
+                     }
                 });
             });
         </script>
@@ -204,6 +207,6 @@ $("#pdfDown").on('click',function(){
           pdf.save('CDSRs_File.pdf');
       })  
     })
-                </script> 
+    </script> 
     </body>
 </html>
